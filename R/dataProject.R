@@ -295,7 +295,7 @@ dataProjectMultiPanel <- function(rca.obj, method = list("NovershternPanel","Mon
 
     if (!(is.null(customPath))){
     for (element in customPath){
-	tmp<-rbind(tmp,dataProjectWork(rca.obj$data,"Custom",element,corMeth,power,T, min.cell.number.expressing ))
+	tmp<-rbind(tmp,dataProjectWorker(rca.obj$data,"Custom",element,corMeth,power,T, min.cell.number.expressing ))
 	   }
     }
     # Assign projection result to RCA object
